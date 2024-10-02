@@ -1,0 +1,39 @@
+/* Header actualizado */
+.App-header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #61dafb; /* Agrega un color suave al hover */
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
