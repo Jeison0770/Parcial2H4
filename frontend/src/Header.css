@@ -1,39 +1,55 @@
-/* Header actualizado */
+/* Header actualizado sin bordes redondeados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App-header {
-    background-color: #333;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 4px;
-  }
-  
-  .nav-links a:hover {
-    background-color: #61dafb; /* Agrega un color suave al hover */
-    color: #333;
-    transition: background-color 0.3s ease;
-  }
-  
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  border-radius: 0; /* Asegúrate de que no haya bordes redondeados */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 0; /* Elimina bordes redondeados en los enlaces */
+}
+
+.nav-links a:hover {
+  background-color: #61dafb;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+.logo {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+.logo img {
+  width: 30px; /* Ancho del logo */
+  height: 30px; /* Alto del logo */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}

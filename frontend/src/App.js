@@ -3,6 +3,9 @@ import axios from 'axios';
 import './App.css';
 import Footer from './Footer'; // Asegúrate de que este archivo Footer.js esté en el mismo directorio
 import Header from './Header'; // Importa el nuevo componente Header
+import editIcon from './assets/edit-icon.png'; // Asegúrate de que la ruta sea correcta
+import deleteIcon from './assets/delete-icon.png'; // Asegúrate de que la ruta sea correcta
+
 
 function App() {
   const [items, setItems] = useState([]);
@@ -106,9 +109,13 @@ function App() {
                   {item.completed ? '☑️' : '❎'} {item.title}
                 </span>
                 <div>
-                  <button onClick={() => startEditing(index)}>Editar</button>
-                  <button onClick={() => deleteItem(index)}>Eliminar</button>
-                </div>
+                <button onClick={() => startEditing(index)}>
+                  <img src={editIcon} alt="Editar" style={{ width: '20px', height: '20px' }} />
+                </button>
+                <button onClick={() => deleteItem(index)}>
+                  <img src={deleteIcon} alt="Eliminar" style={{ width: '20px', height: '20px' }} />
+                </button>
+              </div>
               </li>
             ))}
           </ul>

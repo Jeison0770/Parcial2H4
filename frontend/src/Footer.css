@@ -1,34 +1,56 @@
-/* Footer actualizado */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
-    margin-top: 50px;
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .social-links {
-    margin-top: 20px;
-  }
-  
-  .social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    color: #61dafb; /* Efecto hover moderno */
-  }
-  
+/* Footer actualizado sin padding */
+footer {
+  margin-top: auto;
+  padding: 10px; /* Elimina todos los paddings */
+  font-size: 12px;
+  color: white; /* Color de texto */
+  background-color: #282c34; /* Color de fondo */
+  width: 100%; /* Ancho total menos márgenes (20px a cada lado) */
+  margin-left: 5px; /* Margen a la izquierda */
+  margin-right: 5px; /* Margen a la derecha */
+  text-align: center; /* Centra el texto */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #61dafb; /* Efecto hover moderno */
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Espaciado entre el texto y los íconos */
+}
+
+.social-links img {
+  width: 24px; /* Ajusta el tamaño del ícono */
+  height: 24px; /* Ajusta el tamaño del ícono */
+  margin: 0 5px; /* Espaciado entre los íconos */
+  transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
