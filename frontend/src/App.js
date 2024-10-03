@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import Footer from './Footer'; // Asegúrate de que este archivo Footer.js esté en el mismo directorio
-import Header from './Header'; // Importa el nuevo componente Header
-import editIcon from './assets/edit-icon.png'; // Asegúrate de que la ruta sea correcta
-import deleteIcon from './assets/delete-icon.png'; // Asegúrate de que la ruta sea correcta
+import Footer from './Footer';
+import Header from './Header';
+import editIcon from './assets/edit-icon.png';
+import deleteIcon from './assets/delete-icon.png';
 
 
 function App() {
@@ -87,7 +87,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header /> {/* Añade el Header aquí */}
+      <Header />
       <main>
         <section id="home">
           <h1>Inicia tu lista</h1>
@@ -121,7 +121,7 @@ function App() {
           </ul>
         </section>
       </main>
-      <Footer /> {/* Añade el Footer aquí */}
+      <Footer /> 
     </div>
   );
 }

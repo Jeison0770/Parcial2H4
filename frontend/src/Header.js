@@ -1,6 +1,6 @@
 import React from 'react';
-import './Header.css'; // Si tienes estilos específicos para el header
-import logoIcon from './assets/logo-icon.png'; // Asegúrate de que la ruta sea correcta
+import './Header.css';
+import logoIcon from './assets/logo-icon.png';
 
 const Header = () => {
   return (

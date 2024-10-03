@@ -30,7 +30,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #61dafb; /* Efecto hover moderno */
+  color: #61dafb; 
 }
 .footer-content {
   display: flex;
@@ -41,16 +41,16 @@ footer {
 .social-links {
   display: flex;
   align-items: center;
-  margin-top: 10px; /* Espaciado entre el texto y los íconos */
+  margin-top: 10px; 
 }
 
 .social-links img {
-  width: 24px; /* Ajusta el tamaño del ícono */
-  height: 24px; /* Ajusta el tamaño del ícono */
-  margin: 0 5px; /* Espaciado entre los íconos */
-  transition: transform 0.3s ease; /* Efecto de hover */
+  width: 24px; 
+  height: 24px; 
+  margin: 0 5px; 
+  transition: transform 0.3s ease; 
 }
 
 .social-links img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+  transform: scale(1.1); 
 }
